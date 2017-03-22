@@ -84,7 +84,7 @@ body {
 body {
   background-color: white;
   box-sizing: border-box;
-  font-family: Andika;
+  font-family: 'Noto Sans';
   height: 36in;
   max-height: 36in;
   max-width: 48in;
@@ -98,7 +98,7 @@ footer {
 header {
   background-color: #4c5a6a;
   color: white;
-  padding-bottom: 3rem;
+  padding: 5rem;
   text-align: center;
 }
 header h1 {
@@ -135,7 +135,7 @@ main {
   border-radius: 0px 0.5em 0px 0px;
   color: white;
   font-size: 5rem;
-  padding: 0em 2.5rem 0.75rem 2.5rem;
+  padding: 0.125em 2.5rem;
 }
 strong {
   font-weight: bold;
