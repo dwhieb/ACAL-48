@@ -10,6 +10,8 @@
 // TEMP
 body { border: 1px solid black; }
 
+#introduction > h1 { background-color: @brown; }
+
 body {
   background-color: white;
   box-sizing: border-box;
@@ -21,7 +23,6 @@ body {
 }
 
 footer {
-  align-items: center;
   font-size: 1.5em;
   padding: 2rem;
   text-align: center;
@@ -29,10 +30,8 @@ footer {
 
 header {
 
-  align-items: center;
   background-color: @dark-gray;
   color: white;
-  flex-shrink: 0;
   padding-bottom: 3rem;
   text-align: center;
 
@@ -46,14 +45,60 @@ header {
 
 }
 
-main {
-  align-content: space-around;
-  flex-grow: 1;
-  font-size: 2.5rem;
-  flex-wrap: wrap;
-  padding: 3rem 0rem;
+li {
+  display: list-item;
 }
 
-section {
-  width: 30%;
+.list-section {
+  float: left;
+  width: 50%;
+}
+
+main {
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+
+.section {
+
+  padding: 5rem;
+  width: 33.3333%;
+
+  h2 {
+    font-weight: bold;
+  }
+
+}
+
+.section-content {
+
+  margin: 1rem 2.5rem;
+
+  > section {
+    margin-bottom: 0.5em;
+  }
+
+}
+
+.section-header {
+  border-radius: 0px 0.5em 0px 0px;
+  color: white;
+  font-size: 5rem;
+  padding: 0em 2.5rem 0.75rem 2.5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 3.5rem;
+  list-style: disc outside none;
+}
+
+@media print {
+  @page {
+    size: 48in 36in;
+    size: landscape;
+  }
 }

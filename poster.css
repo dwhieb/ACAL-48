@@ -1,153 +1,12 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-address,
-big,
-br,
-cite,
-code,
-del,
-dfn,
-em,
-hr,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-button,
-caption,
-input,
-fieldset,
-form,
-label,
-legend,
-table,
-textarea,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-audio,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-main,
-mark,
-menu,
-nav,
-option,
-output,
-ruby,
-section,
-select,
-summary,
-time,
-video {
+* {
   border: 0;
   border-collapse: collapse;
-  display: flex;
-  flex-direction: column;
   font: inherit;
   margin: 0;
   outline: 0;
   padding: 0;
   text-decoration: none;
   vertical-align: baseline;
-}
-a,
-abbr,
-acronym,
-b,
-bdo,
-big,
-br,
-cite,
-code,
-del,
-dfn,
-em,
-i,
-ins,
-kbd,
-mark,
-q,
-samp,
-s,
-small,
-span,
-strike,
-strong,
-sub,
-sup,
-time,
-tt,
-var {
-  display: inline;
-}
-blockquote,
-button,
-caption,
-dd,
-dt,
-figcaption,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-legend,
-option,
-output,
-p,
-pre,
-select,
-summary,
-textarea {
-  display: block;
 }
 a,
 a:link,
@@ -165,7 +24,6 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  min-height: 100vh;
 }
 blockquote,
 q {
@@ -180,15 +38,6 @@ q:after {
 }
 :focus {
   outline: 0;
-}
-input[type=date],
-input[type=datetime-local],
-input[type=file],
-input[type=month],
-input[type=time],
-input[type=week],
-select {
-  flex-direction: row;
 }
 ol,
 ul {
@@ -214,6 +63,9 @@ tr {
 body {
   border: 1px solid black;
 }
+#introduction > h1 {
+  background-color: #ad8f67;
+}
 body {
   background-color: white;
   box-sizing: border-box;
@@ -224,16 +76,13 @@ body {
   width: 48in;
 }
 footer {
-  align-items: center;
   font-size: 1.5em;
   padding: 2rem;
   text-align: center;
 }
 header {
-  align-items: center;
   background-color: #4c5a6a;
   color: white;
-  flex-shrink: 0;
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -243,13 +92,46 @@ header h1 {
 header h2 {
   font-size: 6em;
 }
-main {
-  align-content: space-around;
-  flex-grow: 1;
-  font-size: 2.5rem;
-  flex-wrap: wrap;
-  padding: 3rem 0rem;
+li {
+  display: list-item;
 }
-section {
-  width: 30%;
+.list-section {
+  float: left;
+  width: 50%;
+}
+main {
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+.section {
+  padding: 5rem;
+  width: 33.3333%;
+}
+.section h2 {
+  font-weight: bold;
+}
+.section-content {
+  margin: 1rem 2.5rem;
+}
+.section-content > section {
+  margin-bottom: 0.5em;
+}
+.section-header {
+  border-radius: 0px 0.5em 0px 0px;
+  color: white;
+  font-size: 5rem;
+  padding: 0em 2.5rem 0.75rem 2.5rem;
+}
+strong {
+  font-weight: bold;
+}
+ul {
+  padding-left: 3.5rem;
+  list-style: disc outside none;
+}
+@media print {
+  @page {
+    size: 48in 36in;
+    size: landscape;
+  }
 }
