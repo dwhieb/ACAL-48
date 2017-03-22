@@ -1,0 +1,6 @@
+{
+  "events": {
+    "restart": "lessc poster.less poster.css"
+  },
+  "ext": "less"
+}

@@ -1,5 +1,5 @@
 # The cohesive function of prosody in *Ékegusií* (*Kisii*) folktales
-Poster presented at the [Annual Conference on African Linguistics](http://www.indiana.edu/~acal48/) (ACAL) 48, Indiana University, March 30 - April 2, 2017.
+Poster presented at the 48th [Annual Conference on African Linguistics](http://www.indiana.edu/~acal48/) (ACAL), Indiana University, March 30 - April 2, 2017.
 
 Go to https://dwhieb.github.io/acal-poster/ to view this poster online.
 

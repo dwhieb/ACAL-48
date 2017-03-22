@@ -1,0 +1,59 @@
+@import 'reset.less';
+
+@brown:      rgb(173, 143, 103);
+@dark-brown: rgb(114, 96, 86);
+@gray:       rgb(128, 141, 160);
+@dark-gray:  rgb(76, 90, 106);
+@rust:       rgb(121, 70, 61);
+@tan:        rgb(147, 162, 153);
+
+// TEMP
+body { border: 1px solid black; }
+
+body {
+  background-color: white;
+  box-sizing: border-box;
+  font-family: Andika;
+  height: 36in;
+  max-height: 36in;
+  max-width: 48in;
+  width: 48in;
+}
+
+footer {
+  align-items: center;
+  font-size: 1.5em;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+
+  align-items: center;
+  background-color: @dark-gray;
+  color: white;
+  flex-shrink: 0;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 8em;
+  }
+
+  h2 {
+    font-size: 6em;
+  }
+
+}
+
+main {
+  align-content: space-around;
+  flex-grow: 1;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+}
+
+section {
+  width: 30%;
+}
