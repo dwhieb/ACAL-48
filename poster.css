@@ -66,6 +66,21 @@ body {
 #introduction > h1 {
   background-color: #ad8f67;
 }
+#background > h1 {
+  background-color: #726056;
+}
+#section3 > h1 {
+  background-color: #4c5a6a;
+}
+#section4 > h1 {
+  background-color: #808da0;
+}
+#section5 > h1 {
+  background-color: #79463d;
+}
+#section6 > h1 {
+  background-color: #93a299;
+}
 body {
   background-color: white;
   box-sizing: border-box;
@@ -104,7 +119,7 @@ main {
   overflow: hidden;
 }
 .section {
-  padding: 5rem;
+  margin: 5rem 0rem 0rem 5rem;
   width: 33.3333%;
 }
 .section h2 {
