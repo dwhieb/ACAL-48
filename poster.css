@@ -60,35 +60,58 @@ thead {
 tr {
   display: table-row;
 }
-body {
-  border: 1px solid black;
-}
 #introduction > h1 {
   background-color: #ad8f67;
 }
 #background > h1 {
   background-color: #726056;
 }
-#section3 > h1 {
-  background-color: #4c5a6a;
-}
-#section4 > h1 {
+#pauses1 > h1 {
   background-color: #808da0;
 }
-#section5 > h1 {
+#pauses2 > h1 {
+  background-color: #808da0;
+}
+#elision > h1 {
+  background-color: #4c5a6a;
+}
+#isotony1 > h1 {
+  background-color: #a56a5f;
+}
+#isotony2 > h1 {
+  background-color: #a56a5f;
+}
+#reset > h1 {
   background-color: #79463d;
 }
-#section6 > h1 {
+#contour > h1 {
   background-color: #93a299;
+}
+#conclusion > h1 {
+  background-color: #818a8e;
 }
 body {
   background-color: white;
   box-sizing: border-box;
   font-family: 'Noto Sans';
   height: 36in;
+  line-height: 1.5;
   max-height: 36in;
   max-width: 48in;
   width: 48in;
+}
+.col {
+  float: left;
+  width: 33.3333%;
+}
+#col1 {
+  clear: both;
+}
+dfn {
+  font-style: italic;
+}
+em {
+  font-style: italic;
 }
 footer {
   font-size: 1.5em;
@@ -107,8 +130,21 @@ header h1 {
 header h2 {
   font-size: 6em;
 }
+.image-section {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+img[src='elision.png'] {
+  margin-top: -2rem;
+}
+img[src='isotony.png'] {
+  margin-bottom: -3rem;
+}
 li {
   display: list-item;
+  padding-bottom: 0.125em;
 }
 .list-section {
   float: left;
@@ -119,8 +155,7 @@ main {
   overflow: hidden;
 }
 .section {
-  margin: 5rem 0rem 0rem 5rem;
-  width: 33.3333%;
+  margin: 2.55rem 2.5rem 0rem 2.5rem;
 }
 .section h2 {
   font-weight: bold;

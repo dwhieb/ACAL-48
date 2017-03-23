@@ -4,27 +4,51 @@
 @dark-brown: rgb(114, 96, 86);
 @gray:       rgb(128, 141, 160);
 @dark-gray:  rgb(76, 90, 106);
-@rust:       rgb(121, 70, 61);
+@rust:       rgb(165, 106, 95);
+@dark-rust:  rgb(121, 70, 61);
 @tan:        rgb(147, 162, 153);
+@dark-tan:   rgb(129, 138, 142);
 
 // TEMP
-body { border: 1px solid black; }
+// body { border: 1px solid black; }
 
 #introduction > h1 { background-color: @brown; }
 #background > h1 { background-color: @dark-brown; }
-#section3 > h1 { background-color: @dark-gray; }
-#section4 > h1 { background-color: @gray; }
-#section5 > h1 { background-color: @rust; }
-#section6 > h1 { background-color: @tan; }
+#pauses1 > h1 { background-color: @gray; }
+#pauses2 > h1 { background-color: @gray; }
+#elision > h1 { background-color: @dark-gray; }
+#isotony1 > h1 { background-color: @rust; }
+#isotony2 > h1 { background-color: @rust; }
+#reset > h1 { background-color: @dark-rust; }
+#contour > h1 { background-color: @tan; }
+#conclusion > h1 { background-color: @dark-tan; }
 
 body {
   background-color: white;
   box-sizing: border-box;
   font-family: 'Noto Sans';
   height: 36in;
+  line-height: 1.5;
   max-height: 36in;
   max-width: 48in;
   width: 48in;
+}
+
+.col {
+  float: left;
+  width: 33.3333%;
+}
+
+#col1 {
+  clear: both;
+}
+
+dfn {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
 }
 
 footer {
@@ -50,8 +74,25 @@ header {
 
 }
 
+.image-section {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+img[src='elision.png'] {
+  margin-top: -2rem;
+}
+
+img[src='isotony.png'] {
+  margin-bottom: -3rem;
+}
+
 li {
   display: list-item;
+  padding-bottom: 0.125em;
 }
 
 .list-section {
@@ -66,8 +107,7 @@ main {
 
 .section {
 
-  margin: 5rem 0rem 0rem 5rem;
-  width: 33.3333%;
+  margin: 2.55rem 2.5rem 0rem 2.5rem;
 
   h2 {
     font-weight: bold;
