@@ -8,15 +8,6 @@
   text-decoration: none;
   vertical-align: baseline;
 }
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  background: transparent;
-  color: inherit;
-  text-decoration: underline;
-}
 #introduction > h1 {
   background-color: #ad8f67;
 }
@@ -46,6 +37,15 @@ a:active {
 }
 #conclusion > h1 {
   background-color: #818a8e;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  background: transparent;
+  color: inherit;
+  text-decoration: underline;
 }
 body {
   background: white;
