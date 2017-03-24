@@ -15,50 +15,7 @@ a:hover,
 a:active {
   background: transparent;
   color: inherit;
-  text-decoration: none;
-}
-body {
-  background: white;
-  color: black;
-  font-stretch: normal;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-q:before,
-blockquote:after,
-q:after {
-  content: '';
-  content: none;
-}
-:focus {
-  outline: 0;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-spacing: 0;
-  display: table;
-}
-tbody {
-  display: table-row-group;
-}
-td,
-th {
-  display: table-cell;
-}
-thead {
-  display: table-header-group;
-}
-tr {
-  display: table-row;
+  text-decoration: underline;
 }
 #introduction > h1 {
   background-color: #ad8f67;
@@ -91,9 +48,14 @@ tr {
   background-color: #818a8e;
 }
 body {
-  background-color: white;
+  background: white;
   box-sizing: border-box;
+  color: black;
   font-family: 'Noto Sans';
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   height: 36in;
   line-height: 1.5;
   max-height: 36in;
@@ -112,6 +74,9 @@ dfn {
 }
 em {
   font-style: italic;
+}
+:focus {
+  outline: 0;
 }
 footer {
   font-size: 1.5em;
