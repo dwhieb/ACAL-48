@@ -101,10 +101,10 @@ header h2 {
 img {
   width: 100%;
 }
-img[src='elision.png'] {
+img[src='img/elision.png'] {
   margin-top: -2rem;
 }
-img[src='isotony.png'] {
+img[src='img/isotony.png'] {
   margin-bottom: -3rem;
 }
 li {
