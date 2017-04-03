@@ -19,6 +19,7 @@
     <header>
       <h1>The cohesive function of prosody in Ékegusií (Kisii) folktales</h1>
       <h2>Daniel W. Hieber (University of California, Santa Barbara) ~ <a href=http://danielhieber.com>danielhieber.com</a></h2>
+      <p>(click any spectrogram to play the associated audio)</p>
     </header>
 
     <main>
@@ -112,7 +113,7 @@
       <section id=elision class=section>
         <h1 class=section-header>Vowel Elision</h1>
 
-        <section class=image-section>
+        <section>
 
           <section class=section-content>
             <ul>
@@ -121,7 +122,10 @@
             </ul>
           </section>
 
-          <img src=img/elision.png alt='spectrograph showing lack of vowel elision at the transition into reported speech'>
+          <section class=image-section>
+            <img class=spectrograph src=img/elision.png alt='spectrograph showing lack of vowel elision at the transition into reported speech'>
+            <audio src=audio/elision.wav controls preload></audio>
+          </section>
 
           <section>
             <p><strong>Vowel elision can be manipulated to create minor prosodic breaks even without pause, most typically at the transition to reported speech, or to demarcate distinct events in a rapid sequence.</strong></p>
@@ -142,7 +146,8 @@
           </ul>
 
           <section class=image-section>
-            <img src=img/isotony.png alt='spectrograph illustrating isotony across multiple prosodic phrases'>
+            <img class=spectrograph src=img/isotony.png alt='spectrograph illustrating isotony across multiple prosodic phrases'>
+            <audio src=audio/isotony.wav preload controls></audio>
           </section>
 
         </section>
@@ -152,7 +157,7 @@
       <section id=reset class=section>
         <h1 class=section-header>Pitch Reset</h1>
 
-        <section class=image-section>
+        <section>
 
           <section class=section-content>
             <p>Problems determining pitch reset:</p>
@@ -165,7 +170,10 @@
             </ul>
           </section>
 
-          <img src=img/reset.png alt='spectrograph showing pitch reset over a series of utterances'>
+          <section class=image-section>
+            <img class=spectrograph src=img/reset.png alt='spectrograph showing pitch reset over a series of utterances'>
+            <audio src=audio/reset.wav preload controls></audio>
+          </section>
 
           <section>
             <p><strong>Pitch reset is best understood as a more holistic property of how hearers perceive phrases, abstracting away from the parts of the pitch contour that are irrelevant to the overall trend.</strong></p>
@@ -206,6 +214,27 @@
     <footer>
       ACAL 48, Indiana University, March 30 - April 2, 2017. Research supported by NSF GRFP Grant No. 1144085.
     </footer>
+
+    <script type=text/javascript>
+
+      const main          = document.querySelector('main');
+      const spectrographs = new Map;
+
+      Array.from(document.querySelectorAll('.spectrograph')).forEach(graph => {
+        const audio = graph.nextElementSibling;
+        spectrographs.set(graph, audio);
+      });
+
+      const processClick = ev => {
+        if (spectrographs.has(ev.target)) {
+          const audio = spectrographs.get(ev.target);
+          audio.play();
+        }
+      };
+
+      main.addEventListener('click', processClick);
+
+    </script>
 
   </body>
 
