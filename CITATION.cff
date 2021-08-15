@@ -5,7 +5,22 @@ authors:
 cff-version:   1.2.0
 date-released: 2017-04-01
 doi:           10.13140/RG.2.2.16979.32801/1
+license:       CC-BY-SA-4.0
 message:       Please cite this poster using the following information.
 title:         The cohesive function of prosody in Ékegusií (Kisii) folktales
 url:           https://dwhieb.github.io/acal-48/
 version:       1.0.0
+preferred-citation:
+  authors:
+    - family-names: Hieber
+      given-names:  Daniel W.
+      orcid:        https://orcid.org/0000-0002-1411-3773
+  conference:
+    name: 48th Conference on African Linguistics (ACAL)
+  doi:   10.13140/RG.2.2.16979.32801/1
+  institution:
+    name: Indiana University
+  month: 4
+  title: The cohesive function of prosody in Ékegusií (Kisii) folktales
+  type:  conference-paper
+  year:  2017
